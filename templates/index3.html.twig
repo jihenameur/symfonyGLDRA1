@@ -1,0 +1,16 @@
+
+{% extends 'base.html.twig'%}
+
+{% block stylesheet%}{%endblock%}
+
+
+{% block body%}
+<h1>Bonjour tout le monde</h1>
+<ul>
+{% for name in names %}
+  <li>  {{ name }}</li>
+ {% endfor%} 
+</ul>
+<a href="{{path('somme',{'n1':20,'n2':30})}}"> aller a la page </a>
+{% endblock%}
+
